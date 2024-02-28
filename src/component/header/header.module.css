@@ -1,0 +1,107 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #F4F4F4;
+    opacity: .95;
+    position: absolute;
+    z-index: 1;
+}
+
+.img {
+    height: 100%;
+}
+
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0px 15px;
+}
+
+.containerImg {
+    height: 100%;
+    width: 50%;
+    min-width: max-content;
+}
+
+.containerNav {
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+    min-width: max-content;
+    align-items: center;
+
+}
+
+.navBox {
+    display: flex;
+    min-width: max-content;
+    align-items: center;
+}
+
+.link {
+    position: relative;
+    padding: 10px 0;
+    color: black;
+    margin: 0 15px;
+    transition: 0.25s;
+
+}
+
+.link:hover {
+    color: #CE2026;
+    transition: 0.25s;
+}
+
+
+.link::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #CE2026;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    transform: scaleX(0);
+    /* transform-origin: right; */
+    transition: transform 0.25s;
+}
+
+.link:hover:before {
+    transform: scaleX(1);
+    transition: transform 0.25s;
+    /* transform-origin: left; */
+}
+
+
+.containerIcons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    min-width: max-content;
+}
+
+.phoneBox {
+    color: black;
+    background: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 5px;
+    transition: 0.25s;
+}
+
+.phoneBox:hover {
+    color: #F4F4F4;
+    transition: 0.25s;
+    background-color: #CE2026;
+}
+
+.iconPhone{
+    fill: black;
+}
