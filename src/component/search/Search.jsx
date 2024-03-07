@@ -1,14 +1,14 @@
 import React from "react";
 import classes from "./search.module.css"
-import iconDandruff from "/icons/iconDandruff.svg";
+import SvgIcons from "../../../public/icons/svgIcons";
 
 export default function Search() {
     return (
-        <div className={classes.seacrh}>
+        <div className={classes.search}>
             <button className={classes.button}>
-                <img src={iconDandruff} className={classes.img} alt="icon_search" width="30px"/>
+                <SvgIcons name="search" className={classes.img} />
             </button>
-            <input type="text" className={classes.input} />
+            <input type="text" className={classes.input}/>
         </div>
     )
 };

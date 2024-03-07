@@ -82,26 +82,63 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    height: 100%;
     width: 50%;
     min-width: max-content;
 }
 
 .phoneBox {
+    display: flex;
+    align-items: center;
     color: black;
     background: none;
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 18px;
     border: none;
-    margin-right: 5px;
     transition: 0.25s;
 }
-
+.phoneBox p{
+    margin-right: 10px;
+}
 .phoneBox:hover {
     color: #F4F4F4;
     transition: 0.25s;
     background-color: #CE2026;
 }
 
-.iconPhone{
+.iconPhoneSVG{
+    width: 25px;
+    height: 25px;
     fill: black;
+    transition: 0.25s;
+}
+
+.phoneBox:hover .iconPhoneSVG{
+    fill: #ffffff;
+    transition: 0.25s;
+}
+
+.iconBasketButton {
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    transition: 0.25s;
+    background: none;
+}
+.iconBasketButton:hover{
+    transition: 0.25s;
+    background-color: #CE2026;
+}
+
+.iconBasketSVG {
+    margin-left: 3px;
+    width: 25px;
+    height: 28px;
+    fill: black;
+    transition: 0.25s;
+}
+
+.iconBasketButton:hover .iconBasketSVG {
+    fill: #ffffff;
+    transition: 0.25s;
 }

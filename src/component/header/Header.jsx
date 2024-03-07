@@ -4,8 +4,7 @@ import Search from "../search/Search";
 import Button from "../button/Button";
 
 import logo from "/Logo.svg";
-import iconPhone from "/icons/iconPhone.svg";
-import iconBasket from "/icons/iconBasket.svg";
+import SvgIcons from "../../../public/icons/svgIcons";
 
 
 export default function Header() {
@@ -26,10 +25,10 @@ export default function Header() {
                 <div className={classes.containerIcons}>
                     <Button className={classes.phoneBox}>
                         <p>{"+38(093)554-55-88"}</p>
-                        <img src={iconPhone} className={classes.iconPhone} width="30px" alt="icon_phone" />
+                        <SvgIcons name="phone" className={classes.iconPhoneSVG} />
                     </Button>
-                    <Button className="imgButton">
-                        <img src={iconBasket} alt="icon_bascet" width="30px" />
+                    <Button className={classes.iconBasketButton}>
+                        <SvgIcons name="basket" className={classes.iconBasketSVG} />
                     </Button>
                     <Search />
                 </div>
