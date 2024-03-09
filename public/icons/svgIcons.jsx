@@ -46,7 +46,12 @@ const isconsSVG = {
     }
 }
 
+function getIcon(name, className){
+    if( name in isconsSVG) return isconsSVG[name](className)
+}
+
 export default function SvgIcons({ name, className }) {
-    return (isconsSVG[name](className))
+
+    return (getIcon(name, className))
 }
 

@@ -1,0 +1,44 @@
+.baner {
+    min-height: 750px;
+    max-height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.banerBox {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(.50turn, #0000005d 75%,#00000023, #ffffff00 );
+}
+.titleBox {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1180px;
+    min-width: 600px;
+    padding: 50px 0 30px 120px ;
+    min-height: 375px;
+    height: 100%;
+}
+
+.title{
+    min-width: max-content;
+    font-size: 85px;
+    color: #fff;
+    margin-right: 80px;
+}
+.title>span {
+    font-size: 80px;
+    color: #FF0000;
+}
+
+.titleText{
+    max-width: 400px;
+    font-size: 22px;
+    color: #fff;
+}

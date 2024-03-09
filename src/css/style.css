@@ -13,6 +13,7 @@ ol {
   padding: 0;
 }
 
+
 /* Убираем внешние отступы */
 body,
 button,
@@ -90,14 +91,14 @@ button{
 } */
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
+} */
 
 h2-h6 {
   font-family: "Montserrat", sans-serif;
@@ -189,8 +190,27 @@ a{
 }
  */
 
+/*
+myWhite       #F4F4F4
 
+Darck grey    #2E2E2E
 
+Grey          #989898
+
+White Grey    #D9D9D9
+
+Red Two       #FF0000
+
+Red three     #CE2026
+
+red one       #FF6868
+
+Grey White    #BBBBBB
+ */
+hr{
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+}
 
 
 .container {

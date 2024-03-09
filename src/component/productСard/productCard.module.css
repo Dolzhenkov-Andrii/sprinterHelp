@@ -1,0 +1,52 @@
+.notActive{
+    display: none;
+}
+
+.backgroundBox{
+    width: 460px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(56, 56, 56);
+    border-radius: 0 0 10px 10px;
+    color: aliceblue;
+
+}
+.usedIndex{
+    border-radius: 0 10px 10px 10px;
+}
+.imgBox{
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+.infoTextLine{
+    border: none;
+
+    height: 1px;
+    background-color: #D9D9D9;
+}
+.usedIndexBox{
+    position: absolute;
+    background-color: black;
+    width: fit-content;
+    padding: 2px 5px;
+    border-radius: 0 10px;
+}
+
+.img{
+
+}
+
+.infoBox{
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+}
+
+.priceInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

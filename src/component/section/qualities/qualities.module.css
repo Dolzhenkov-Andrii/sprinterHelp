@@ -1,0 +1,45 @@
+.background,
+.qualitiesBox {
+    background-color: #CE2026;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qualitiesGroup {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.qualitiesGroupLine {
+    border: none;
+    margin: none;
+    width: 1px;
+    background: linear-gradient( #ffffff00 0%,#F4F4F4 20%, #F4F4F4 80%, #ffffff00 100%);
+}
+
+.contentBox {
+    width: min-content;
+}
+
+.title {
+    color: #F4F4F4;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: max-content;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.text {
+    width: 100%;
+    color: #F4F4F4;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* width: 240px; */
+    font-size: 14px;
+}

@@ -1,0 +1,9 @@
+.background{
+    background-color: #F4F4F4;
+}
+.cardBox{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

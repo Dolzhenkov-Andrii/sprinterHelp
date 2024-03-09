@@ -9,6 +9,8 @@ import SvgIcons from "../../../public/icons/svgIcons";
 
 export default function Header() {
 
+
+
     return (
         <header className={classes.header}>
             <div className={`container ${classes.headerBox}`}>
