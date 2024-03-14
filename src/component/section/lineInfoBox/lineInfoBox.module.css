@@ -4,12 +4,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 10px;
 }
 
 .qualitiesGroup {
     width: 940px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 25px 0;
 }
 
@@ -28,16 +29,29 @@
 }
 
 .title {
-    color: #F4F4F4;
-
+    color: #FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: max-content;
     font-size: 20px;
     margin-bottom: 18px;
 }
 
 .text {
-    width: 100%;
+    width: fit-content;
     color: #F4F4F4;
-    /* width: 240px; */
     font-size: 14px;
+}
+.text.phone{
+    width: max-content;
+}
+
+.icon{
+    transform: scale(-1, 1);
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    fill: #FFFF;
+    stroke: #FFFF;
 }

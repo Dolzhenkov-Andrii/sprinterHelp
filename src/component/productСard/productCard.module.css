@@ -137,6 +137,13 @@
 
 /* ---------------------------------------------------------- */
 
+.infoTextLine{
+    border: none;
+    margin: none;
+    height: 1px;
+    background-color: #BBBBBB;
+}
+
 .infoBox {
     width: 100%;
     height: fit-content;
