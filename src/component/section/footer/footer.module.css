@@ -1,0 +1,52 @@
+.background{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #000000;
+}
+.textBox{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    min-width: fit-content;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #F4F4F4;
+}
+.left{
+    justify-content: end;
+}
+.rigth{
+    justify-content: start;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+    text-decoration: none;
+    border: solid 1px #F4F4F4;
+    border-radius: 5px;
+    transition: all 0.15s ease-out;
+}
+.link:hover{
+    border-color: #FF0000;
+    transition: all 0.15s ease-out;
+}
+.icon{
+    fill: #F4F4F4;
+    height: 30px;
+    margin: 5px;
+}
+
+.link:hover>.icon{
+    fill: #FF0000;
+    height: 30px;
+    margin: 5px;
+}

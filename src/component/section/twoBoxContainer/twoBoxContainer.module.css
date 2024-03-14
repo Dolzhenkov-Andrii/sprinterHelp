@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100%;
+}
+
+.lineAdress {
+    border: none;
+    margin: 0 15px;
+    width: 1px;
+    background-color: #F4F4F4;
+}

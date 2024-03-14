@@ -220,7 +220,7 @@ hr{
 .container {
   max-width: 1420px;
   width: 100%;
-
+  height: fit-content;
   /* height: max-content; */
   /* padding: 10px; */
 }
