@@ -1,0 +1,30 @@
+.background {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 100%;
+    /* height: fit-content; */
+    height: 830px;
+    max-height: 830px;
+    background: url("/public/img/BackgroundCatalogue.png")center/ cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+    background-color: #2E2E2E;
+}
+
+.navLeft{
+    display: flex;
+}

@@ -54,4 +54,7 @@
     height: 25px;
     fill: #FFFF;
     stroke: #FFFF;
+    stroke-width: 5px;
+    stroke-miterlimit: 10px;
+    stroke-linecap: round;
 }

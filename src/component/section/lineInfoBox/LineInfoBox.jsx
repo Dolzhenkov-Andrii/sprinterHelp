@@ -6,16 +6,19 @@ import SvgIcons from "../../../../public/icons/svgIcons";
 const lineBoxContent = {
     "infoService": {
         "start": {
+            "id": 1,
             "title": "Різноманітний вибір",
             "text": "Знайди саме те що тобі потрібно!",
             "icon": "",
         },
         "center": {
+            "id": 2,
             "title": "Поважаємо клієнтів",
             "text": "Завжди допоможемо, та задовільним ваші потреби!",
             "icon": "",
         },
         "end": {
+            "id": 3,
             "title": "Замовля та отримуй",
             "text": "Обери та замовляй, доставка по всій Україні!",
             "icon": "",
@@ -23,23 +26,25 @@ const lineBoxContent = {
     },
     "infoContacts": {
         "start": {
+            "id": 1,
             "title": "Телефон:",
             "text": ["+38 (093) 554-55-88",(<br/>),"+38 (066) 533-17-39"],
             "icon": "phone",
         },
         "center": {
+            "id": 2,
             "title": "Графік роботи:",
             "text": ["Пн-Пт  09:00-18:00 ",(<br/>)," Сб  09:00-17:00"],
             "icon": "time",
         },
         "end": {
+            "id": 3,
             "title": "Елект. пошта:",
             "text": "i@sprinter.help",
             "icon": "email",
         },
     },
 }
-
 
 
 function qualitieContent(title, text, iconName) {
@@ -53,7 +58,9 @@ function qualitieContent(title, text, iconName) {
 
 
 
+
 export default function LineInfoBox({ nameBox }) {
+
 
     return (
         <section className={classes.background}>
