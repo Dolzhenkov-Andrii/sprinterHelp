@@ -3,6 +3,7 @@ import classes from "./catalogue.module.css";
 import Button from "../../component/button/Button";
 import SvgIcons from "../../../public/icons/svgIcons";
 import InputSort from "../../component/inputSort/InputSort";
+import FilterSort from "../../component/filterSort/FilterSort";
 
 
 export default function Catalogue() {
@@ -11,12 +12,11 @@ export default function Catalogue() {
             <div className={classes.navigation}>
                 <div className={`container ${classes.container}`}>
                     <div className={classes.navLeft}>
-                        <InputSort list={["16","24","36","48"]}/>
-                        <InputSort list={["за алфавітом","за зростанням цін","за зниженням цін","за новизною"]}/>
-                        <div>{/* component */}</div>
+                        {/* <InputSort list={["16", "24", "36", "48"]} /> */}
+                        {/* <InputSort list={["за алфавітом", "за зростанням цін", "за зниженням цін", "за новизною"]} /> */}
                     </div>
                     <div className={classes.navRigth}>
-                        {/* component */}
+                       <FilterSort/> 
                     </div>
                 </div>
             </div>

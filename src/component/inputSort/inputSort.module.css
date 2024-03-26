@@ -47,6 +47,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    width: 100%;
     min-width: 52px;
     width: fit-content;
     height: 24px;
@@ -54,7 +55,7 @@
 
 .selectContainer select {
     background-color: #2E2E2E;
-    width: 100%;
+    width: fit-content;
     height: 100%;
     border: 0 !important;
     -moz-appearance: none;
@@ -66,8 +67,8 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 25px;
-    padding: 0 2px 0 4px;
+    line-height: 24px;
+    padding: 0 22px 0 4px;
     margin-left: 4px;
     color: #D9D9D9;
     box-shadow: none;
