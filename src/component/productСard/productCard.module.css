@@ -18,24 +18,36 @@
     box-shadow: 0 0 .7em rgba(0, 0, 0, 0.6);
     transition: all 0.15s ease-out;
     z-index: 1;
+    &.cataloge{
+        width: 320px;
+        min-width: 320px;
+        height: 320px;
+        min-height: 320px;
+    }
     /* Х-позиція, Y-позиція, Розмиття, Динаміка висоти, колір */
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); */
     /* transition: .2s; */
 }
 .usedIndex {
-    border-radius: 0 10px 10px 10px;
+    border-radius: 0 11px 10px 10px;
 }
 .backgroundBox:hover {
-    position: absolute;
-    z-index: 3;
     width: 470px;
     min-width: 470px;
     height: 356px;
     min-height: 356px;
-    /* transition: .2s; */
-    /* box-shadow: 0 0 12px rgba(0, 0, 0, 1.2); */
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.829);
     transition: all 0.15s ease-out;
+    &.cataloge{
+        width: 330px;
+        min-width: 330px;
+        height: 330px;
+        min-height: 330px;
+    }
+    &>.infoBox{
+        transition: all 0.25s ease-out;
+    }
+    
 }
 
 .test{
@@ -46,6 +58,13 @@
     min-width: 470px;
     height: 356px;
     min-height: 356px;
+    &.cataloge{
+        width: 330px;
+        min-width: 330px;
+        height: 330px;
+        min-height: 330px;
+        margin: auto;
+    }
 }
 /* ---------------------------------------------------------- */
 
@@ -58,8 +77,8 @@
 }
 
 .img {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     margin: auto;
     position: absolute;
     top: 0;
@@ -67,6 +86,7 @@
     bottom: 0;
     right: 0;
 }
+
 .usedIndexImg {
     border-radius: 0 10px 0 0;
 }
@@ -152,6 +172,10 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    transition: all 0.25s ease-out;
+    &.cataloge{
+        font-size: 14px;
+    }
 }
 
 .priceBox {
@@ -169,12 +193,18 @@
     font-weight: 500;
     font-size: 18px;
     overflow: hidden;
+    &.cataloge{
+        font-size: 16px;
+    }
 }
 
 .modelAuto {
     font-weight: 400;
     font-size: 14px;
     overflow: hidden;
+    &.cataloge{
+        font-size: 12px;
+    }
 }
 
 .newPrice {
@@ -183,6 +213,10 @@
     font-size: 22px;
     margin-right: 15px;
     line-height: 28px;
+    &.cataloge{
+        font-size: 20px;
+        line-height: 26px;
+    }
 }
 
 .oldPrice {
@@ -191,6 +225,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    &.cataloge{
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 
 /* ---------------------------------------------------------- */
@@ -206,6 +244,9 @@
     border-radius: 5px;
     background-color: #027300;
     transition: all 0.15s ease-out;
+    &.cataloge{
+        font-size: 20px;
+    }
 }
 
 .basketButton:hover {
@@ -226,6 +267,10 @@
     height: 25px;
     fill: #F4F4F4;
     transition: all 0.15s ease-out;
+    &.cataloge{
+        width: 28px;
+        height: 23px;
+    }
 }
 
 .basketButton:hover>.basketSvgIcons {

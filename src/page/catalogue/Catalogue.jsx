@@ -4,6 +4,7 @@ import Button from "../../component/button/Button";
 import SvgIcons from "../../../public/icons/svgIcons";
 import InputSort from "../../component/inputSort/InputSort";
 import FilterSort from "../../component/filterSort/FilterSort";
+import ProductCard from "../../component/productСard/ProductCard";
 
 
 export default function Catalogue() {
@@ -12,8 +13,8 @@ export default function Catalogue() {
             <div className={classes.navigation}>
                 <div className={`container ${classes.container}`}>
                     <div className={classes.navLeft}>
-                        {/* <InputSort list={["16", "24", "36", "48"]} /> */}
-                        {/* <InputSort list={["за алфавітом", "за зростанням цін", "за зниженням цін", "за новизною"]} /> */}
+                        <InputSort list={["16", "24", "36", "48"]} />
+                        <InputSort list={["за алфавітом", "за зростанням цін", "за зниженням цін", "за новизною"]} />
                     </div>
                     <div className={classes.navRigth}>
                        <FilterSort/> 
@@ -21,14 +22,45 @@ export default function Catalogue() {
                 </div>
             </div>
             <div className={classes.catalogueBox}>
-                <Button><SvgIcons /></Button>
-                <div className={classes.contentBox}>
+                <Button className={`${classes.buttonDown} ${classes.downLeft}`}><SvgIcons name={"arrowDown"} className={classes.iconDown}/></Button>
+                <div className={`container ${classes.containerContent}`}>
                     <div className={classes.content}>
-                        {/* component */}
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
+                        <ProductCard className={'cataloge'}/>
                     </div>
                     {/* component */}
                 </div>
-                <Button><SvgIcons /></Button>
+                <Button className={`${classes.buttonDown} ${classes.downRight}`}><SvgIcons name={"arrowDown"} className={classes.iconDown}/></Button>
             </div>
         </section>
     )
