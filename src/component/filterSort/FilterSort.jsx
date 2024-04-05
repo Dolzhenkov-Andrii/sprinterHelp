@@ -88,7 +88,7 @@ export default function FilterSort() {
                     <div>
 
                         {listCategory.map((item, index) => {
-                  
+
                             return <InputCategory
                                 key={index}
                                 props={item}

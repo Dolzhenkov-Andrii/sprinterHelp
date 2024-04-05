@@ -1,0 +1,57 @@
+.backgroundBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.button{
+    background-color: #00000017;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all .15s ease-out;
+    margin: 0 5px;
+    &:hover{
+        transition: all .15s ease-out;
+        background-color: #CE2026;
+        &>.icon{
+            transition: all .15s ease-out;
+            fill: #F4F4F4;
+        }
+    }
+}
+.left{
+    transform: rotate(90deg);
+    padding-top: 5px;
+}
+.right{
+    transform: rotate(-90deg);
+    padding-top: 5px;
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+    transition: all .15s ease-out;
+}
+
+.button.number{
+    border-radius: 5px;
+    font-size: 18px;
+    &:hover{
+        transition: all .15s ease-out;
+        color: #F4F4F4;
+    }
+}
+
+.button.number.active{
+    font-size: 20px;
+    border-radius: 5px;
+    color: #F4F4F4;
+    background-color: #CE2026;
+}

@@ -1,39 +1,82 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-*:focus-visible {
-    outline: none;
-}
-
-    /* color: #D9D9D9;
-    background-color: #2E2E2E;
-     */
-.selectBackground{
+.background {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: fit-content;
-    height: 100%;
-    padding: 0 10px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     color: #D9D9D9;
+    height: 35px;
+    position: relative;
+}
+
+.filterButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2px;
+    color: #D9D9D9;
+    padding-right: 24px;
+    transition: all 0.15s ease-out;
+
+    &:hover>.activeType {
+        transition: all 0.15s ease-out;
+        color: #FF0000;
+    }
+
+    &:hover+.selectIcon>.icon {
+        fill: #FF0000;
+        stroke: #FF0000;
+        transition: fill 0.15s ease-out,
+            stroke 0.15s ease-out, transform 0.35s ease-out;
+    }
+
+    &.active>.activeType {
+        color: #FF6868;
+    }
+
+    &.active+.selectIcon>.icon {
+        fill: #FF6868;
+        stroke: #FF6868;
+        transform: rotate(180deg);
+        transform-origin:center;
+        transition: fill 0.15s ease-out,
+            stroke 0.15s ease-out, transform 0.35s ease-out;
+    }
+}
+
+.activeType{
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.filterButtonBox {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.text{
+    width: 180px;
+}
+.number{
+    width: 48px;
 }
 
 
-.icon{
+.icon {
     width: 15px;
     height: 8px;
     fill: #D9D9D9;
-    stroke:#D9D9D9;
+    stroke: #D9D9D9;
     stroke-width: 4px;
+    transition: fill 0.15s ease-out,
+        stroke 0.15s ease-out, transform 0.35s ease-out;
+
 }
-.selectIcon{
+
+.selectIcon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -42,40 +85,71 @@
     align-items: center;
     justify-content: center;
     pointer-events: none;
-}
-.selectContainer{
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    min-width: 52px;
-    width: fit-content;
-    height: 24px;
-}
-
-.selectContainer select {
-    background-color: #2E2E2E;
-    width: fit-content;
-    height: 100%;
-    border: 0 !important;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 0 22px 0 4px;
-    margin-left: 4px;
-    color: #D9D9D9;
-    box-shadow: none;
-    &:hover optgroup{
-        border: none;
-        border-radius: 10px;
+    &.selectIconCat{
+        left: -100%;
+        margin-left: 19px;
     }
 }
 
 
+.backgroundForm {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    top: 100%;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    width: fit-content;
+    height: fit-content;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #2E2E2E;
+    transform: scaleY(0);
+    transition: transform 0.25s linear;
+    transform-origin: top;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 7px 3px rgba(0, 0, 0, 0.623);
+    &.text{
+        width: 180px;
+    }
+    &.number{
+        width: 48px;
+    }
+    &.active {
+        border-top: solid 1px #CE2026;
+        transform: scaleY(1);
+        transition: transform 0.25s linear;
+        transform-origin: top;
+    }
+    &.active.text{
+        width: 180px;
+    }
+    &.active.number{
+        width: 48px;
+    }
+}
+
+
+.typeContent{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    padding-left: 7px;
+    color: #BBBBBB;
+    transition: all 0.15s ease-out;
+    &:hover{
+        color: #D9D9D9;
+        background-color: #CE2026;
+        transition: all 0.15s ease-out;
+    }
+    &:last-child{
+        border-radius: 0 0 5px 5px;
+    }
+}
