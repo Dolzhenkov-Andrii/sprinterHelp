@@ -3,17 +3,62 @@ import classes from "./homeCardBox.module.css"
 import ProductCard from "../../productСard/ProductCard";
 import Button from "../../button/Button";
 
+import img1 from "/img/img1.jpg";
+
+const productArr= [
+    {
+        'id': 1,
+        'title':'title',
+        'model':'model',
+        'price': '2000 грн',
+        'oldPrice':'3000 грн',
+        'statusBU': true,
+        'img':img1,
+    },
+    {
+        'id': 1,
+        'title':'title',
+        'model':'model',
+        'price': '2000 грн',
+        'oldPrice':'3000 грн',
+        'statusBU': true,
+        'img':img1,
+    },
+    {
+        'id': 1,
+        'title':'title',
+        'model':'model',
+        'price': '2000 грн',
+        'oldPrice':'3000 грн',
+        'statusBU': true,
+        'img':img1,
+    },
+    {
+        'id': 1,
+        'title':'title',
+        'model':'model',
+        'price': '2000 грн',
+        'oldPrice':'3000 грн',
+        'statusBU': true,
+        'img':img1,
+    },
+    {
+        'id': 1,
+        'title':'title',
+        'model':'model',
+        'price': '2000 грн',
+        'oldPrice':'3000 грн',
+        'statusBU': true,
+        'img':img1,
+    },
+]
 
 
 export default function HomeCardBox(){
     return (
         <section className={classes.background}>
             <div className={`container ${classes.cardBox}`}>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
+                {productArr.map(card => <ProductCard cardData={card}/>)}
                 <div className={classes.infoBox}>
                     <div className={classes.textBox}>
                         <p className={classes.title}>{"Комплектуючі"}</p>

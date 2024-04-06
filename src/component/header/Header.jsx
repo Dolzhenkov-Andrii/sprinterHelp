@@ -5,6 +5,7 @@ import Button from "../button/Button";
 
 import logo from "/Logo.svg";
 import SvgIcons from "../../../public/icons/svgIcons";
+import { NavLink } from "react-router-dom";
 
 
 export default function Header() {
@@ -14,12 +15,12 @@ export default function Header() {
     return (
         <header className={classes.header}>
             <div className={`container ${classes.headerBox}`}>
-                <div className={classes.containerImg}>
+                <NavLink className={classes.containerImg} to="">
                     <img src={logo} className={classes.img} alt="logo" />
-                </div>
+                </NavLink>
                 <div className={classes.containerNav}>
                     <ul className={classes.navBox}>
-                        <li><a className={classes.link} href="#">{"Каталог"}</a></li>
+                        <li><NavLink className={classes.link} to="/catalog">{"Каталог"}</NavLink></li>
                         <li><a className={classes.link} href="#">{"Послуги"}</a></li>
                         <li><a className={classes.link} href="#">{"Доставка"}</a></li>
                     </ul>

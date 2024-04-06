@@ -47,7 +47,7 @@
     &>.infoBox{
         transition: all 0.25s ease-out;
     }
-    
+
 }
 
 .test{
@@ -63,7 +63,7 @@
         min-width: 330px;
         height: 330px;
         min-height: 330px;
-        margin: auto;
+        margin: 5px;
     }
 }
 /* ---------------------------------------------------------- */

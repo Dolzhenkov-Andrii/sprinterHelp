@@ -1,25 +1,20 @@
 import React from "react"
-import Header from "./component/header/Header"
-import LineInfoBox from "./component/section/lineInfoBox/LineInfoBox"
-import AdressLine from "./component/section/adress/AdressLine"
-import Footer from "./component/section/footer/Footer"
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from "./page/home/Home"
 import Catalogue from "./page/catalogue/Catalogue"
-
+import Layout from "./page/Layout";
 
 
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <Catalogue/>
-      {/* <Home/> */}
-      <LineInfoBox nameBox={"infoContacts"}/>
-      <AdressLine/>
-      <Footer/>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout/>}>
+        <Route index="home" element={<Home />} />
+        <Route path="catalog" element={<Catalogue />} />
+      </Route>
+    </Routes>
   )
 }
 
