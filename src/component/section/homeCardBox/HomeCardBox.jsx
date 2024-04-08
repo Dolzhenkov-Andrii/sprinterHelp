@@ -58,7 +58,7 @@ export default function HomeCardBox(){
     return (
         <section className={classes.background}>
             <div className={`container ${classes.cardBox}`}>
-                {productArr.map(card => <ProductCard cardData={card}/>)}
+                {productArr.map((card, i) => <ProductCard key={i} cardData={card}/>)}
                 <div className={classes.infoBox}>
                     <div className={classes.textBox}>
                         <p className={classes.title}>{"Комплектуючі"}</p>

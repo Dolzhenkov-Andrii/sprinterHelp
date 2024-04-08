@@ -19,7 +19,7 @@
     color: #D9D9D9;
     padding-right: 24px;
     transition: all 0.15s ease-out;
-
+    background: #2E2E2E;
     &:hover>.activeType {
         transition: all 0.15s ease-out;
         color: #FF0000;
@@ -108,7 +108,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    background-color: #2E2E2E;
+    background: #2E2E2E;
     transform: scaleY(0);
     transition: transform 0.25s linear;
     transform-origin: top;
@@ -145,6 +145,7 @@
     padding-left: 7px;
     color: #BBBBBB;
     transition: all 0.15s ease-out;
+    background: none;
     &:hover{
         color: #D9D9D9;
         background-color: #CE2026;

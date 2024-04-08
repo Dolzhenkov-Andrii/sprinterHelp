@@ -4,7 +4,7 @@ import SvgIcons from "../../../public/icons/svgIcons";
 import Button from "../button/Button";
 
 
-export default function InputSort({ list, typeContent, isActiveSort, isSort }) {
+export default function InputSort({ list, typeContent, isActiveSort, isSort, whoSortActiv, isWhoSortActiv }) {
 
     const isType = {
         'number': classes.number,
@@ -19,10 +19,25 @@ export default function InputSort({ list, typeContent, isActiveSort, isSort }) {
     }
 
 
-    const buttonActiv = () => isActive ? setActive('') : setActive(classes.active);
+    const buttonActiv = () => {
+        isActive ?
+            setActive('') :
+            setActive(classes.active),
+            isWhoSortActiv({
+                '1': 'number' == typeContent ? true : false,
+                '2': 'text' == typeContent ? true : false,
+                '3': false,
+            });
+    }
+
+    useEffect(() => {
+        console.log('1-2')
+        if (!whoSortActiv['number' == typeContent ? '1' : '2']) setActive('')
+    }, [whoSortActiv])
+
     return (
         <div className={classes.background}>
-            {typeContent=='number'?<p>Товарів на сторінці:</p>:<p>Відсортувати:</p>}
+            {typeContent == 'number' ? <p>Товарів на сторінці:</p> : <p>Відсортувати:</p>}
             <div className={`${classes.filterButtonBox} ${isType[typeContent]}`}>
                 <Button className={`${classes.filterButton} ${isActive}`} onClick={buttonActiv}>
                     <p className={classes.activeType}>{isSort}</p>

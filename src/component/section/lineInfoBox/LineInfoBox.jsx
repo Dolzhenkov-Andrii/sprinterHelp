@@ -49,7 +49,7 @@ const lineBoxContent = {
 
 function qualitieContent(title, text, iconName) {
     return (
-        <div className={classes.contentBox}>
+        <div key={title} className={classes.contentBox}>
             <p className={classes.title}><SvgIcons name={iconName} className={classes.icon} /> {title}</p>
             <p className={`${classes.text} ${classes[iconName]}`}>{text}</p>
         </div>
@@ -65,7 +65,7 @@ export default function LineInfoBox({ nameBox }) {
     return (
         <section className={classes.background}>
             <div className={`container ${classes.qualitiesBox}`}>
-                <div className={classes.qualitiesGroup}>
+                <div  className={classes.qualitiesGroup}>
                     {qualitieContent(
                         lineBoxContent[nameBox]?.start.title || "Різноманітний вибір",
                         lineBoxContent[nameBox]?.start.text || "",

@@ -77,8 +77,8 @@
 }
 
 .img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     margin: auto;
     position: absolute;
     top: 0;
@@ -128,6 +128,7 @@
     width: 100px;
     height: 100px;
     transition: all 0.15s ease-out;
+    background: none;
 }
 
 .eyeButton:hover>.eyeSvgIcons{

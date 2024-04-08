@@ -18,7 +18,7 @@
     color: #D9D9D9;
     padding-right: 24px;
     transition: all 0.15s ease-out;
-
+    background: none;
     &:hover {
         transition: all 0.15s ease-out;
         color: #FF0000;
@@ -144,6 +144,7 @@
     background: #464646;
     border: none;
     border-radius: 5px;
+    outline: none;
     padding:3px 5px;
     font-size: 12px;
     color: #F4F4F4;
@@ -165,7 +166,7 @@
     font-size: 12px;
     border-radius: 5px;
     transition: background-color .15s ease-out;
-
+    background: none;
     &:hover{
         border-color: #CE2026;
         /* color: #CE2026; */

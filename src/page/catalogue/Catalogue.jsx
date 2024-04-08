@@ -30,6 +30,12 @@ export default function Catalogue() {
     const [pageNum, isPageNum] = useState(1);
     const [cardInPage, isCardInPage] = useState(16)
     const [cardInSort, isCardInSorte] = useState("за алфавітом")
+    const [whoSortActiv, isWhoSortActiv] = useState({
+        '1':false,
+        '2':false,
+        '3':false,
+    })
+
 
     if(~~(MAXCARD/cardInPage)+1 < pageNum) isPageNum(~~(MAXCARD/cardInPage)+1)
 
@@ -46,16 +52,18 @@ export default function Catalogue() {
         return result
     }
 
+
+
     return (
         <section className={classes.background}>
             <div className={classes.navigation}>
                 <div className={`container ${classes.container}`}>
                     <div className={classes.navLeft}>
-                        <InputSort list={[16, 24, 36, 48]} typeContent={'number'} isActiveSort={isCardInPage} isSort={cardInPage}/>
-                        <InputSort list={["за алфавітом", "за зростанням цін", "за зниженням цін", "за новизною"]} typeContent={'text'} isActiveSort={isCardInSorte} isSort={cardInSort}/>
+                        <InputSort list={[16, 24, 36, 48]} typeContent={'number'} isActiveSort={isCardInPage} isSort={cardInPage} whoSortActiv={whoSortActiv} isWhoSortActiv={isWhoSortActiv}/>
+                        <InputSort list={["за алфавітом", "за зростанням цін", "за зниженням цін", "за новизною"]} typeContent={'text'} isActiveSort={isCardInSorte} isSort={cardInSort} whoSortActiv={whoSortActiv} isWhoSortActiv={isWhoSortActiv}/>
                     </div>
                     <div className={classes.navRigth}>
-                       <FilterSort/>
+                       <FilterSort whoSortActiv={whoSortActiv} isWhoSortActiv={isWhoSortActiv}/>
                     </div>
                 </div>
             </div>

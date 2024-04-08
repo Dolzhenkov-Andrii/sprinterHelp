@@ -52,7 +52,7 @@
     align-items: center;
     padding: 0 10px 68px 10px;
     transition: all 0.15s ease-out;
-
+    background: none;
     &.downLeft {
         justify-content: right;
 
@@ -107,7 +107,7 @@
     height: auto;
     max-height: 740px;
     overflow: auto;
-    padding: 5px;
+    padding: 10px;
 
     &::-webkit-scrollbar {
         width: 12px;

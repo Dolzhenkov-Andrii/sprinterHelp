@@ -13,7 +13,7 @@
 
 
 .img {
-    height: 100%;
+    height: 60px;
 }
 
 .headerBox {
@@ -26,17 +26,28 @@
 
 .containerImg {
     height: 100%;
-    width: 50%;
+    /* width: 50%; */
+    /* margin-right: auto; */
     min-width: max-content;
 }
 
 .containerNav {
     display: flex;
-    justify-content: center;
-    /* width: 50%; */
-    min-width: max-content;
+    justify-content: start;
+    width: 100%;
+    min-width: fit-content;
     align-items: center;
+    padding-left: 180px;
+}
 
+
+.containerIcons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    /* margin-left: auto; */
+    min-width: max-content;
 }
 
 .navBox {
@@ -80,14 +91,6 @@
 }
 
 
-.containerIcons {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 100%;
-    width: 50%;
-    min-width: max-content;
-}
 
 .phoneBox {
     display: flex;

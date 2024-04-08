@@ -30,14 +30,25 @@ const listCategory = [
 ]
 
 
-export default function FilterSort() {
+export default function FilterSort({ whoSortActiv, isWhoSortActiv }) {
 
-    const [isActive, setActive] = useState('');
+    const [isActive, setActive] = useState(whoSortActiv[3]);
     const [isActive2, setActive2] = useState({
         'id': null,
         'classes': classes.active
     });
-    const buttonActiv = () => isActive ? setActive('') : setActive(classes.active);
+    const buttonActiv = () => {
+        if (isActive) {
+            setActive('')
+        } else {
+            isWhoSortActiv({
+                '1': false,
+                '2': false,
+                '3': true,
+            })
+            setActive(classes.active);
+        }
+    }
     const buttonActiv2 = (id) => isActive2.id != null && isActive2.id == id ? setActive2({
         'id': null,
         'classes': classes.active
@@ -45,6 +56,10 @@ export default function FilterSort() {
         'id': id,
         'classes': classes.active
     });
+    useEffect(() => {
+        console.log('3')
+        if (!whoSortActiv['3']) setActive('')
+    }, [whoSortActiv])
 
     return (
         <div className={classes.background}>
@@ -95,7 +110,7 @@ export default function FilterSort() {
                                 classes={classes}
                                 isActive={isActive2}
                                 onClick={buttonActiv2}
-                                />
+                            />
                         })}
                     </div>
                 </div>
