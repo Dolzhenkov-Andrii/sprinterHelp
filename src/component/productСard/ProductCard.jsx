@@ -31,7 +31,7 @@ export default function ProductCard({ className, cardData }) {
                     <div className={`${classes.priceInfo} ${catalogeStyle}`}>
                         <div className={`${classes.priceBox} ${catalogeStyle}`}>
                             <p className={`${classes.newPrice} ${catalogeStyle}`}>{cardData.price}</p>
-                            {cardData?.oldPrice?<p className={`${classes.oldPrice} ${catalogeStyle}`}>{"3000 грн"}</p>:<></>}
+                            {cardData?.oldPrice?<p className={`${classes.oldPrice} ${catalogeStyle}`}>{cardData.oldPrice}</p>:<></>}
 
                         </div>
                         <Button className={`${classes.basketButton} ${catalogeStyle}`}>

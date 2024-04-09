@@ -1,0 +1,99 @@
+.background{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+    transition: all 0.15s ease-in-out;
+    border-radius: 5px;
+    margin: 5px 0;
+    &:hover{
+        transition: all 0.15s ease-in-out;
+        background: #D9D9D9;
+    }
+}
+.usedIndex{
+    display: flex;
+    color: #D9D9D9;
+    border: 2px;
+    padding:0 5px;
+    background: #2E2E2E;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 5px;
+}
+.contentBox{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.textTitleBox{
+    display: flex;
+    align-items: center;
+}
+.textBox{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.priceBox{
+    display: flex;
+    align-items: end;
+    height: 100%;
+}
+
+.textPrice{
+    color: #CE2026;
+    margin-right: 40px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.textTitle{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+.img{
+    width: 130px;
+    height: 110px;
+    border-radius: 5px;
+}
+
+.buttonRemoval {
+    padding: 6px;
+    background: none;
+    border-radius: 50%;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+        transition: all 0.15s ease-in-out;
+
+        background: #CE2026;
+
+        &>.iconRemoval {
+            transition: all 0.15s ease-in-out;
+            fill: #F4F4F4;
+        }
+    }
+
+}
+
+.iconRemoval {
+    width: 25px;
+    height: 25px;
+    fill: #2E2E2E;
+    transition: all 0.15s ease-in-out;
+}

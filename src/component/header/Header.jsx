@@ -13,14 +13,16 @@ export default function Header() {
 
 
     const [basketActive, isBascetActive] = useState(false)
-
-    if (basketActive) {
-
+    const openModal = () => {
+        document.body.classList.add('modal-open');
     }
-
+    const hideModal = () => {
+        document.body.classList.remove('modal-open');
+    }
+    basketActive?openModal():hideModal()
     return (
         <>
-            {basketActive ? <BasketBox clouse={isBascetActive} /> : <></>}
+            <BasketBox active={basketActive} clouse={isBascetActive} />
             <header className={classes.header}>
                 <div className={`container ${classes.headerBox}`}>
                     <NavLink className={classes.containerImg} to="">

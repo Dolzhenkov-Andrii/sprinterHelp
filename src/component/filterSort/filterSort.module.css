@@ -17,18 +17,18 @@
     padding: 0 2px;
     color: #D9D9D9;
     padding-right: 24px;
-    transition: all 0.15s ease-out;
+    transition: all 0.25s ease-out;
     background: none;
     &:hover {
-        transition: all 0.15s ease-out;
+        transition: all 0.25s ease-out;
         color: #FF0000;
     }
 
     &:hover+.selectIcon>.icon {
         fill: #FF0000;
         stroke: #FF0000;
-        transition: fill 0.15s ease-out,
-            stroke 0.15s ease-out, transform 0.35s ease-out;
+        transition: fill 0.25s ease-out,
+            stroke 0.25s ease-out, transform 0.35s ease-out;
     }
 
     &.active {

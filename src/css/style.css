@@ -210,6 +210,8 @@ Red three     #CE2026
 red one       #FF6868
 
 Grey White    #BBBBBB
+
+Green         #027300
  */
 hr{
   margin-block-start: 1px;
@@ -245,10 +247,10 @@ hr{
   background: #d4d4d4;
   transition: all 0.15s ease-out;
 }
-/*
-body{
+
+.modal-open{
   overflow: hidden;
-} */
+}
 
 /* html{
   overflow: hidden;
