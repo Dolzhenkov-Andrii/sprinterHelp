@@ -6,23 +6,15 @@ import Button from "../button/Button";
 import logo from "/Logo.svg";
 import SvgIcons from "../../../public/icons/svgIcons";
 import { NavLink } from "react-router-dom";
-import BasketBox from "../basketBox/BasketBox";
 
 
-export default function Header() {
+export default function Header({basketActive, isBascetActive}) {
 
 
-    const [basketActive, isBascetActive] = useState(false)
-    const openModal = () => {
-        document.body.classList.add('modal-open');
-    }
-    const hideModal = () => {
-        document.body.classList.remove('modal-open');
-    }
-    basketActive?openModal():hideModal()
+
     return (
         <>
-            <BasketBox active={basketActive} clouse={isBascetActive} />
+
             <header className={classes.header}>
                 <div className={`container ${classes.headerBox}`}>
                     <NavLink className={classes.containerImg} to="">

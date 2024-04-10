@@ -5,7 +5,7 @@ import SvgIcons from "../../../public/icons/svgIcons";
 import BasketCard from "../productСard/BasketCard";
 import img from "/img/img1.jpg";
 
-const MAXCARD = 5;
+const MAXCARD = 15;
 
 const productArr1 = Array(MAXCARD)
 for (let i = 0; i < productArr1.length; i++) {
@@ -21,11 +21,15 @@ for (let i = 0; i < productArr1.length; i++) {
     }
 }
 
-export default function BasketBox({ active, clouse }) {
+export default function BasketBox({ active, clouse, isPayment }) {
 
+    const isPaymentActive = ()=>{
+        isPayment(true)
+        clouse(false)
+    }
 
     return (<>
-        <div className={`${classes.background} ${active ? classes.active : ''}`} onClick={() => clouse(false)}></div>
+        <div className={`${classes.background} ${active ? classes.active : ''}`} onClick={() => clouse(false)}/>
         <div className={`${classes.container} ${active ? classes.active : ''}`}>
             <div className={classes.titleHeader}>
                 <Button className={classes.buttonClouse} onClick={() => clouse(false)}>
@@ -46,7 +50,7 @@ export default function BasketBox({ active, clouse }) {
                     <p>Кількість товару: <span className={classes.textCurent}>{'2'} шт.</span></p>
                     <p>Загальна сумма: <span className={classes.textPrice}>{'~900'} грн.</span></p>
                 </div>
-                <Button className={classes.buttonBay} onClick={() => clouse(false)}>
+                <Button className={classes.buttonBay} onClick={isPaymentActive}>
                     <p>Замовити</p>
                 </Button>
             </div>

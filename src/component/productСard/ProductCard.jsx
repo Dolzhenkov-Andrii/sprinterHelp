@@ -5,20 +5,21 @@ import SvgIcons from "../../../public/icons/svgIcons";
 
 
 
-export default function ProductCard({ className, cardData }) {
+export default function ProductCard({ className, cardData,isActivCardBox }) {
 
 
     const isUsedIndex = cardData?.statusBU || false;
     const catalogeStyle = className == "cataloge"? classes.cataloge:''
 
+
     return (
         <div className={`${classes.test} ${catalogeStyle}`}>
             <div className={`${classes.backgroundBox} ${isUsedIndex ? classes.usedIndex : ''} ${catalogeStyle} `}>
-                <div className={`${classes.imgBox} ${isUsedIndex ? classes.usedIndexImg : ''} ${catalogeStyle}`}>
+                <div className={`${classes.imgBox} ${isUsedIndex ? classes.usedIndexImg : ''} ${catalogeStyle}`} onClick={()=>isActivCardBox(true)}>
                     <img className={`${classes.img} ${catalogeStyle}`} src={cardData?.img || ''} alt="Product" />
                     <div className={`${classes.usedIndexBox} ${isUsedIndex ? '' : classes.notActive} ${catalogeStyle}`}><p>{"Б/В"}</p></div>
                     <Button className={`${classes.eyeButton} ${catalogeStyle}`}>
-                        <SvgIcons name={"eye"} className={`${classes.eyeSvgIcons} ${catalogeStyle}`} />
+                        <SvgIcons name={"eye"} className={`${classes.eyeSvgIcons} ${catalogeStyle}`}/>
                     </Button>
                     <div className={`${classes.blurBG} ${catalogeStyle}`} />
                 </div>

@@ -1,8 +1,30 @@
 .box {
     display: flex;
-    justify-content: center;
     align-items: center;
     color: #2E2E2E;
+
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+
+    &.home {
+        text-align: center;
+        justify-content: center;
+        width: 250px;
+        height: fit-content;
+        flex-direction: column;
+        line-height: 24px;
+        padding: 0 10px;
+    }
+
+    &.card {
+        justify-content: flex-start;
+
+        border-right: solid 1px #BBBBBB;
+        margin: 0 4px;
+        &:last-child {
+            border: none;
+        }
+    }
 }
 
 .icon {
@@ -12,52 +34,79 @@
 }
 
 /* ---------------------------------------------------------- */
-.box.home {
-    width: 250px;
-    height: fit-content;
-    flex-direction: column;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    line-height: 24px;
-    padding: 0 10px;
-}
 
-.button.home {
-    padding: 10px;
-    width: 130px;
-    height: 130px;
-    transition: all 0.15s ease-out;
+
+.button {
     background: none;
+
+    &.home {
+        padding: 10px;
+        width: 130px;
+        height: 130px;
+        transition: all 0.15s ease-out;
+
+    }
+
+    &.card {
+        width: 50px;
+        height: 50px;
+    }
 }
 
-.button.home:hover {
-    padding: 5px;
-    transition: all 0.15s ease-out;
+.button {
+    &.home:hover {
+        padding: 5px;
+        transition: all 0.15s ease-out;
+    }
 }
 
 
-.icon.home {
-    border-radius: 20px;
+.icon {
+    &.home {
+        border-radius: 20px;
+    }
 }
 
-.title.home {
-    font-size: 18px;
-    font-weight: 600;
-    padding: 10px 20px;
-    border-bottom: solid 1px #2E2E2E;
-    margin-bottom: 10px;
-    transition: all 0.15s ease-out;
+.title {
+    &.home {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px 20px;
+        border-bottom: solid 1px #2E2E2E;
+        margin-bottom: 10px;
+        transition: all 0.15s ease-out;
+    }
+    &.card{
+        font-size: 14px;
+        font-weight: 600;
+    }
 }
 
-.button.home:hover+.title {
-    color: #CE2026;
-    transition: all 0.15s ease-out;
+.button {
+    &.home:hover+.title {
+        color: #CE2026;
+        transition: all 0.15s ease-out;
+    }
 }
-
-.text.home {
-    width: 100%;
-    height: fit-content;
-    font-size: 14px;
-    font-weight: 500;
+.textBox{
+    &.card{
+        width: 120px;
+        margin-left: 2px;
+        padding: 3px;
+    }
+}
+.text {
+    &.home {
+        width: 100%;
+        height: fit-content;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &.card{
+        padding-right: 2px;
+        width: auto;
+        height: min-content;
+        font-size: 12px;
+        font-weight: 500;
+    }
 }

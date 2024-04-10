@@ -1,0 +1,310 @@
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    min-height: 570px;
+    height: fit-content;
+    border-radius: 0 0 10px 10px;
+    background-color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.titleBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 10px 15px;
+    background: #CE2026;
+}
+
+.title {
+    color: #F4F4F4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.titleFirst {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.titleSecond {
+    font-weight: 500;
+}
+
+.buttonClouse {
+    padding: 6px;
+    background: none;
+    border-radius: 50%;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+        transition: all 0.15s ease-in-out;
+
+        background: #F4F4F4;
+
+        &>.iconClouse {
+            transition: all 0.15s ease-in-out;
+            fill: #CE2026;
+        }
+    }
+
+}
+
+.iconClouse {
+    width: 20px;
+    height: 20px;
+    fill: #F4F4F4;
+    transition: all 0.15s ease-in-out;
+}
+
+.contentBox {
+    display: flex;
+    width: 100%;
+    min-height: 480px;
+    max-height: fit-content;
+    padding: 15px;
+}
+
+.imgBox {
+    display: flex;
+    min-width: 430px;
+    max-width: 430px;
+    height: 480px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerImg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4F4;
+    border-radius:5px 5px 0 0;
+}
+
+.img {
+    width: auto;
+    height: auto;
+}
+
+.imgSmallBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    padding: 5px 5px;
+    border-radius:0 0 5px 5px;
+    border: solid 1px #FFFFFF;
+    background: #F4F4F4;
+}
+
+.imgSmall {
+    height: 100%;
+    border-radius: 5px;
+    margin-right: 5px;
+    border: solid 1px #2e2e2e00;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+        transition: all 0.15s ease-in-out;
+        border: solid 1px #2e2e2e79;
+    }
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: fit-content;
+    padding-left: 10px;
+}
+
+.iconBasket {
+    fill: #F4F4F4;
+    padding: 2px;
+    width: fit-content;
+    height: 100%;
+}
+
+.buttonBay {
+    color: #F4F4F4;
+    width: 190px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #027300;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+        transition: all 0.15s ease-in-out;
+        background-color: #CE2026;
+    }
+
+    &>p {
+        margin: 5px 0;
+    }
+
+    &>.pluse {
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+.priceBox {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.price {
+    color: #CE2026;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.oldPrice {
+    color: #989898;
+    text-decoration: line-through;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.buttonBox {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.serviceInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    width: 100%;
+}
+.line{
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #999999;
+}
+.productInfoBox {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 5px 0;
+    width: 100%;
+    height: 320px;
+    max-height: 320px;
+    overflow: auto;
+    overflow-x: hidden;
+
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background-color: #c4c4c4;
+        box-shadow: 0 0 2px rgba(255, 255, 255, 0.2) inset;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #575757;
+        border-radius: 8px;
+        border: 3px solid #BBBBBB;
+        transition: all 0.15s ease-out;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #CE2026;
+        transition: all 0.15s ease-out;
+    }
+}
+
+.paramProduct {
+    margin: 2px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 1px;
+    color: #000000;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+
+    &:first-child {
+        color: #CE2026;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &:nth-child(even){
+        background-color: #EAEAEA;
+    }
+}
+
+.paramTitle {
+    min-width: 45%;
+    max-width: 45%;
+}
+
+.paramText {
+    min-width: 55%;
+    max-width: 55%;
+}
+.phoneBox{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    &>p{
+        left: 5px;
+        position: absolute;
+    }
+    &>input{
+        font-weight: 400;
+    font-size: 18px;
+        margin-left: 3px;
+        border: none;
+        background: #f0f0f0;
+        border-radius: 5px;
+        outline: none;
+        padding: 2px 3px 2px 35px;
+        width: 145px;
+        transition: all 0.15s ease-out;
+        &:hover{
+            transition: all 0.15s ease-out;
+            background: #e6e6e6;
+        }
+    }
+}

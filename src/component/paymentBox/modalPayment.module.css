@@ -1,0 +1,237 @@
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    min-height: 400px;
+    height: fit-content;
+    border-radius: 0 0 10px 10px;
+    background-color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.titleBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background: #CE2026;
+}
+
+.title {
+    color: #F4F4F4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+.titleFirst {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 32px;
+    min-width: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonClouse {
+    padding: 6px;
+    background: none;
+    border-radius: 50%;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+        transition: all 0.15s ease-in-out;
+
+        background: #F4F4F4;
+
+        &>.iconClouse {
+            transition: all 0.15s ease-in-out;
+            fill: #CE2026;
+        }
+    }
+
+}
+
+.iconClouse {
+    width: 20px;
+    height: 20px;
+    fill: #F4F4F4;
+    transition: all 0.15s ease-in-out;
+}
+
+
+.contentBox {
+    display: flex;
+    padding: 15px 0;
+    height: 400px;
+}
+
+.cardBox {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    height: fit-content;
+    max-height: 370px;
+    overflow: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background-color: #c4c4c4;
+        box-shadow: 0 0 2px rgba(255, 255, 255, 0.2) inset;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #575757;
+        border-radius: 8px;
+        border: 3px solid #BBBBBB;
+        transition: all 0.15s ease-out;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #CE2026;
+        transition: all 0.15s ease-out;
+    }
+}
+
+.cardLine {
+    border: none;
+    margin: 0 5px;
+    width: 100%;
+    border-bottom: solid 1px #BBBBBB;
+
+    &:last-child {
+        border: none;
+    }
+}
+
+.phoneBox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+
+    &>p {
+        left: 5px;
+        position: absolute;
+    }
+
+    &>input {
+        font-weight: 400;
+        font-size: 18px;
+        border: none;
+        background: #dadada;
+        border-radius: 5px;
+        outline: none;
+        padding: 5px 5px 5px 40px;
+        width: 100%;
+        transition: all 0.15s ease-out;
+
+        &:hover {
+            transition: all 0.15s ease-out;
+            background: #cfcfcf;
+        }
+    }
+}
+
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.priceBox {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 2px;
+}
+
+.textCurent {
+    color: black;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.textPrice {
+    color: #FF0000;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.buttonBay {
+    color: #F4F4F4;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 20px;
+    background-color: #027300;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+        transition: all 0.15s ease-in-out;
+        background-color: #CE2026;
+    }
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 220px;
+
+    &>input {
+        font-weight: 400;
+        font-size: 18px;
+        border: none;
+        background: #dadada;
+        border-radius: 5px;
+        outline: none;
+        padding: 5px 10px;
+        width: 100%;
+        transition: all 0.15s ease-out;
+
+        &:hover {
+            transition: all 0.15s ease-out;
+            background: #cfcfcf;
+        }
+    }
+}
+
+.infoFormBox {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: min-content; */
+}
+
+.textInfo {
+    font-weight: 400;
+    font-size: 18px;
+
+    &>span {
+        color: #CE2026;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    width: 316px;
+    padding: 0 15px 15px 10px;
+}

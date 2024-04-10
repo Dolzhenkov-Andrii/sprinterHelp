@@ -23,7 +23,7 @@ for(let i = 0; i< productArr.length; i++) {
     }
 }
 
-export default function Catalogue() {
+export default function Catalogue({isModalCardActive}) {
 
 
     const [productCard, updateProductCard] = useState(productArr)
@@ -47,7 +47,7 @@ export default function Catalogue() {
     function getCard(){
         let result = []
         for(let i = pageNum*cardInPage-cardInPage, j = 0; i<MAXCARD && j < cardInPage;j++, i++){
-            result.push(<ProductCard key={i} className={'cataloge'} cardData={productCard[i]}/>)
+            result.push(<ProductCard key={i} className={'cataloge'} cardData={productCard[i]} isActivCardBox={isModalCardActive}/>)
         }
         return result
     }

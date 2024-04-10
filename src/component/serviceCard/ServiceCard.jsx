@@ -9,14 +9,21 @@ const styleClass = {
 }
 
 
-export default function ServiceCard({ClassName, name, title, text}){
+export default function ServiceCard({ ClassName, name, title, text }) {
     return (
         <div className={`${classes.box} ${styleClass[ClassName]}`}>
             <Button className={`${classes.button} ${styleClass[ClassName]}`}>
-                <SvgIcons name={name} className={`${classes.icon} ${styleClass[ClassName]} `}/>
+                <SvgIcons name={name} className={`${classes.icon} ${styleClass[ClassName]} `} />
             </Button>
-            <p className={`${classes.title} ${styleClass[ClassName]} `}>{title}</p>
-            <p className={`${classes.text} ${styleClass[ClassName]} `}>{text}</p>
+            {ClassName == 'home' ?
+                <>
+                    <p className={`${classes.title} ${styleClass[ClassName]} `}>{title}</p>
+                    <p className={`${classes.text} ${styleClass[ClassName]} `}>{text}</p>
+                </> :
+                <div className={`${classes.textBox} ${styleClass[ClassName]} `}>
+                    <p className={`${classes.title} ${styleClass[ClassName]} `}>{title}</p>
+                    <p className={`${classes.text} ${styleClass[ClassName]} `}>{text}</p>
+                </div>}
         </div>
     )
 }

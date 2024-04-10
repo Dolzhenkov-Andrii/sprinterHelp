@@ -4,6 +4,7 @@ import ProductCard from "../../productСard/ProductCard";
 import Button from "../../button/Button";
 
 import img1 from "/img/img1.jpg";
+import { NavLink } from "react-router-dom";
 
 const productArr= [
     {
@@ -65,7 +66,7 @@ export default function HomeCardBox(){
                         <hr />
                         <p className={classes.text}>{"Відкрийте для себе ідеальний баланс надійності та доступності, наші запчастини з розібраних авто, за середньо ринковими цінами (позначені Б/В), але запевнюємо в ії якості та надійності."}<br/>{"Також в наявності є і нові запчастини, тому натискай і обери саме те, що тобі потрібно!"}</p>
                     </div>
-                    <Button className={classes.button}>{"ДИВИТИСЯ БІЛЬШЕ"}</Button>
+                    <NavLink className={classes.link} to="/catalog"><Button className={classes.button}>{"ДИВИТИСЯ БІЛЬШЕ"}</Button></NavLink>
                 </div>
             </div>
         </section>
