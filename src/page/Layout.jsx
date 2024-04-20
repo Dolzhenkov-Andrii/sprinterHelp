@@ -14,6 +14,7 @@ import { useCard } from "../hooc/isActivete";
 import img1 from "/img/img_1.png";
 import img2 from "/img/img_2.png";
 import img3 from "/img/img_3.png";
+import GoogleMap from '../map/GoogleMap'
 
 const MAXCARD = 1;
 
@@ -63,6 +64,7 @@ function Layout({testTmp, clouse}) {
             <Outlet/>
             <LineInfoBox nameBox={"infoContacts"} />
             <AdressLine />
+            <GoogleMap/>
             <Footer />
         </>
     )
